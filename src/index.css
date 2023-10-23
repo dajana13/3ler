@@ -1,0 +1,118 @@
+:root {
+  /* colors  */
+  --primary-dark:#090A0E;
+  --primary-yellow:#FFAD36;
+  --primary-white:#FFFFFF;
+  --primary-gray:#B5B5B6;
+  --secondary-dark:#161821;
+
+  /* fonts  */
+  --ff-primary:'Poppins', sans-serif;
+  --ff-secondary:'Racing Sans One', cursive;
+
+  /* font-sizes-small */
+  --fs-1-small: 3.25rem;
+  --fs-2-small: 2.25rem;
+  --fs-3-caps-small: 1.5rem;
+  --fs-3-small: 1.5rem;
+  --fs-4-small: 1.2rem;
+  --fs-btn-small: 1rem;
+  --fs-body-small:1rem;
+  --fs-xl-text-small: 1.25rem;
+  --fs-ig-text-small: 1rem;
+  --fs-caption-small:0.8rem;
+
+  /* font-sizes  */
+  --fs-1: 4rem;
+  --fs-2: 3rem;
+  --fs-3-caps: 2rem;
+  --fs-3: 2rem;
+  --fs-4: 1.75rem;
+  --fs-btn: 1.375rem;
+  --fs-body:1.125rem;
+  --fs-xl-text:1.5rem;
+  --fs-ig-text:1.25rem;
+  --fs-caption:0.875rem;
+  
+  /* letter-spacing  */
+  --ls-12: 0.4rem;
+  --ls-10: 0.3rem;
+  --ls-8: 0.2rem;
+  --ls-6: 0.1rem;
+  --ls-0: 0rem;
+
+  --padding-primary-block: clamp(2.5rem, 8vw, 13rem);
+}
+
+
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */ 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  margin: 0px;
+  text-rendering: optimizeSpeed;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Make form elements easier to work with  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
