@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/3ler/static/css/main.2aa84320.css",
+    "main.js": "/3ler/static/js/main.02893796.js",
+    "static/js/787.be6ba89f.chunk.js": "/3ler/static/js/787.be6ba89f.chunk.js",
+    "static/media/background-photo.svg": "/3ler/static/media/background-photo.39a7a7111f5ea9fb122d.svg",
+    "static/media/grid-image1.svg": "/3ler/static/media/grid-image1.e4bc71c2f20bee0bd1ddce2a24f8e276.svg",
+    "static/media/grid-image2.svg": "/3ler/static/media/grid-image2.124d95c816c031d930a36d8d9a082093.svg",
+    "static/media/grid-image3.svg": "/3ler/static/media/grid-image3.bd76cb3d9c5c83e5f4cd97f1600c5df3.svg",
+    "static/media/event-content2.svg": "/3ler/static/media/event-content2.113e1958721bdf0ac73cec5fa30c4bc8.svg",
+    "static/media/event-content1.svg": "/3ler/static/media/event-content1.bc7873bb2eb836aa1562955e5dd0fa00.svg",
+    "static/media/mediaDark.svg": "/3ler/static/media/mediaDark.8d78580616b508356cd84e69336aad53.svg",
+    "static/media/trophy.svg": "/3ler/static/media/trophy.14e0b01ab8855ae6088fcfdea5eb473c.svg",
+    "static/media/logo-footer.svg": "/3ler/static/media/logo-footer.f645315b5d0c0b3b06c070f613022202.svg",
+    "static/media/logo.svg": "/3ler/static/media/logo.0f097c604756c1bb941de984e0f0979a.svg",
+    "static/media/icon-yellow-phone.svg": "/3ler/static/media/icon-yellow-phone.6d16ac47397289654db5e9aaf8854233.svg",
+    "static/media/icon-yellow-mail.svg": "/3ler/static/media/icon-yellow-mail.d1cfda48c1ec07eaf7b93dffa747a9cc.svg",
+    "index.html": "/3ler/index.html",
+    "static/media/hamburger-menu-close.svg": "/3ler/static/media/hamburger-menu-close.7763afddc907aaace85404336d2e40ab.svg",
+    "static/media/hamburger-menu.svg": "/3ler/static/media/hamburger-menu.021a1a944d84e77dd647.svg",
+    "static/media/arrow.svg": "/3ler/static/media/arrow.ce51746a96442a3ba15470757d78da6c.svg",
+    "static/media/rectangle.svg": "/3ler/static/media/rectangle.ae8b2c16b4ef106133a3.svg",
+    "main.2aa84320.css.map": "/3ler/static/css/main.2aa84320.css.map",
+    "main.02893796.js.map": "/3ler/static/js/main.02893796.js.map",
+    "787.be6ba89f.chunk.js.map": "/3ler/static/js/787.be6ba89f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2aa84320.css",
+    "static/js/main.02893796.js"
+  ]
+}
