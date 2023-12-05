@@ -1,0 +1,26 @@
+.trophy-gray-background {
+  background-color: var(--secondary-dark);
+  padding-block: var(--padding-primary-block);
+}
+
+.trophy-area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 3rem;
+}
+
+.all-tropheys {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 3rem;
+  align-items: baseline;
+}
+
+.trophy-img {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-bottom: 1.2rem;
+}

@@ -1,0 +1,28 @@
+.section-title {
+  letter-spacing: var(--ls-10);
+  padding-block: var(--padding-primary-block);
+  gap: 2em;
+}
+
+.h2 {
+  font-size: var(--fs-2-small);
+}
+
+.h3-caps {
+  color: var(--primary-yellow);
+  font-size: var(--fs-3-caps-small);
+}
+
+@media (min-width: 50em) {
+  .section-title {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+
+  .title-div-left,
+  .title-div-right {
+    width: 48%;
+  }
+}

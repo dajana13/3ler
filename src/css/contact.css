@@ -1,0 +1,103 @@
+.contact {
+  gap: 1.5rem;
+  margin-bottom: clamp(2.5rem, 8vw, 13rem);
+}
+
+.h2-contact {
+  text-align: center;
+}
+
+.contact-body {
+  gap: 3rem;
+}
+
+form > button {
+  width: 100%;
+}
+
+.contact-location {
+  gap: 0.75rem;
+}
+
+.contact-icons {
+  gap: 1rem;
+}
+
+.contact-icon {
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.form-onSubmit {
+  gap: 2rem;
+}
+
+.label-input {
+  gap: 0.2rem;
+}
+
+.form-label {
+  color: var(--primary-gray);
+}
+
+.input-contact,
+.textarea-contact {
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--primary-gray);
+}
+
+.input-contact:focus,
+.textarea-contact:focus {
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-yellow);
+  outline: none;
+}
+
+.input-contact {
+  height: 3rem;
+  color: var(--primary-white);
+  padding-left: 0.7rem;
+}
+
+.textarea-contact {
+  height: 10rem;
+  color: var(--primary-white);
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 50em) {
+  .contact {
+    gap: 2rem;
+    margin-bottom: 0;
+    padding-block: var(--padding-primary-block);
+  }
+
+  .contact-body {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .form-onSubmit-div,
+  .contact-location {
+    width: 48%;
+  }
+
+  .form-onSubmit-div {
+    align-self: flex-end;
+  }
+
+  form > button {
+    width: 12rem;
+    align-self: center;
+  }
+
+  .contact-icons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,143 @@
+/* Header - mobile */
+.header {
+  position: sticky;
+  width: 100%;
+  height: 4rem;
+  top: 0px;
+  padding: 1em 0;
+  background-color: var(--primary-dark);
+}
+
+.header.down {
+  top: -4rem;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.logo-img {
+  max-width: 8rem;
+}
+
+.nav-list {
+  margin: 0;
+  list-style: none;
+  position: fixed;
+  inset: 0 0 0 15%;
+  flex-direction: column;
+  padding-inline-start: 1rem;
+  gap: 3em;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 350ms ease-out;
+}
+
+ul {
+  padding-inline-start: 0rem;
+}
+
+.nav-list[data-visible="true"] {
+  transform: translateX(0%);
+}
+
+.nav-link {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-4);
+  letter-spacing: var(--ls-10);
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--primary-yellow);
+}
+
+.mobile-toggle-nav {
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  width: 4rem;
+  height: 4rem;
+  right: 0;
+  background-color: transparent;
+  background-image: url("../images/hamburger-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  border: 0;
+}
+
+.mobile-toggle-nav[aria-expanded="true"] {
+  background-image: url("../images/close-dark.svg");
+}
+
+.sticky {
+  position: fixed;
+  background: hsl(0 0% 100% /0.1);
+  backdrop-filter: blur(5rem);
+}
+
+.nav-list {
+  background: var(--primary-yellow);
+}
+
+/* Header - desktop */
+@media (min-width: 50em) {
+  .header {
+    height: 5rem;
+  }
+
+  .header.down {
+    top: -5rem;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-img {
+    max-width: 10rem;
+  }
+
+  .nav {
+    width: 60%;
+  }
+
+  .nav-list {
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+    inset: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    transform: translateX(0);
+    transition: none;
+  }
+
+  .nav-link {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-btn);
+    letter-spacing: var(--ls-0);
+    text-transform: none;
+    color: var(--primary-white);
+  }
+
+  .nav-link:hover {
+    color: var(--primary-yellow);
+  }
+
+  .nav-item {
+    margin-left: 1rem;
+  }
+
+  .mobile-toggle-nav {
+    display: none;
+  }
+}
