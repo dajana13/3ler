@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"
+import "../css/about.css"
 import gridImage1 from "../images/grid-image1.svg"
 import gridImage2 from "../images/grid-image2.svg"
 import gridImage3 from "../images/grid-image3.svg"

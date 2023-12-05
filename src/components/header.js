@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect} from "react";
-import "../App.css"
+import "../css/header.css"
 import logo from '../logo.svg';
 
 export default function Header() {

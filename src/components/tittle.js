@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"
+import "../css/title.css"
 
 export default function Tittle() {
 

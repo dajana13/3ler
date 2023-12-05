@@ -1,0 +1,83 @@
+.membership {
+  padding-block: var(--padding-primary-block);
+}
+
+.cta-content {
+  gap: 2rem;
+}
+
+.member-title {
+  gap: 1rem;
+}
+
+.orange-rectangle {
+  background-color: var(--primary-yellow);
+}
+
+.xl-text {
+  color: var(--primary-dark);
+  padding-inline: 1rem;
+  padding-block: 1rem;
+}
+
+/* Modal - form Submit (contact us) - mobile */
+
+.modal-form-submit {
+  position: fixed;
+  width: 90%;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-overflow-scrolling: touch;
+  z-index: 999;
+  background-color: #17a673;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.modal-form-submit[data-visible="false"] {
+  display: none;
+}
+
+.modal-form-text {
+  color: var(--primary-white);
+}
+
+@media (min-width: 50em) {
+  .membership {
+    background-image: url("../images/rectangle.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60%;
+  }
+
+  .cta-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .cta-h2 {
+    max-width: 80%;
+  }
+
+  .member-title {
+    width: 48%;
+  }
+
+  .orange-rectangle {
+    width: 48%;
+    background-color: transparent;
+  }
+
+  /* Modal form Submit (contact us) - desktop  */
+
+  .modal-form-submit {
+    max-width: 50%;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

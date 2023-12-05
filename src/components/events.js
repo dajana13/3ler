@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"
+import "../css/events.css"
 import eventContent1 from "../images/event-content1.svg"
 import eventContent2 from "../images/event-content2.svg"
 

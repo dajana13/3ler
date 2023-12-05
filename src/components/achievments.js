@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css"
+import "../css/achievements.css"
 import trophy from "../images/trophy.svg"
 
 export default function Achievements() {

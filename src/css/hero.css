@@ -1,0 +1,42 @@
+/* Hero - mobile */
+.hero {
+  background-image: linear-gradient(
+      to left,
+      rgba(9, 10, 14, 0),
+      rgba(9, 10, 14, 1)
+    ),
+    url("../images/background-photo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 39.5rem;
+}
+
+.call-to-action-tittle {
+  font-family: var(--ff-secondary);
+}
+
+span {
+  color: var(--primary-yellow);
+}
+
+.ig-text {
+  font-size: var(--fs-ig-text-small);
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  gap: 1em;
+  margin-top: 1em;
+}
+
+/* Desktop */
+@media (min-width: 37em) {
+  .buttons {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .nav-list {
+    padding-inline-start: 3rem;
+  }
+}
