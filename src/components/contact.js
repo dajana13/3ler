@@ -1,15 +1,17 @@
 import React from "react";
 import { useState } from "react";
-import "../App.css"
+import { CSSTransition } from 'react-transition-group';
+import "../css/contact.css"
 import iconYellowMail from "../images/icon-yellow-mail.svg"
 import iconYellowPhone from "../images/icon-yellow-phone.svg"
+import Snackbar from './snackbar';
 
 export default function Contact() {
     const [formData, setFormData] = useState(
         {fullName: "", email: "", message: ""}
     )
 
-    const [visible, setVisible] = useState(false);
+    const [snackbarVisible, setSnackbarVisible] = useState(false);
 
     function handleChange(event) {
         setFormData(prevState=>{
@@ -22,15 +24,11 @@ export default function Contact() {
 
     function handleSubmit(event){
         event.preventDefault()
-        let msg = "Message successfully sent"
-        console.log(msg);
-        console.log(formData.fullName);
-
         setFormData({fullName: "", email: "", message: ""});
-        setVisible(true);
+        setSnackbarVisible(true);
 
         setTimeout(() => {
-            setVisible(false);
+            setSnackbarVisible(false);
         }, 2000);
     }
 
@@ -42,7 +40,7 @@ export default function Contact() {
                 <div className="form-onSubmit-div">
                     <form className="form-onSubmit column" onSubmit={handleSubmit}>
                         <div className="label-input column">
-                            <label for="fullName" className="body2 form-label">Full Name *</label>
+                            <label htmlFor="fullName" className="body2 form-label">Full Name *</label>
                             <input
                                 id="fullName"
                                 className="input-contact"
@@ -56,7 +54,7 @@ export default function Contact() {
                             />
                         </div>
                         <div className="label-input column">
-                            <label for="email" className="body2 form-label">Email *</label>
+                            <label htmlFor="email" className="body2 form-label">Email *</label>
                             <input
                                 id="email"
                                 className="input-contact"
@@ -70,7 +68,7 @@ export default function Contact() {
                             />
                         </div>
                         <div className="label-input column">
-                            <label for="message" className="body2 form-label">Message</label>
+                            <label htmlFor="message" className="body2 form-label">Message</label>
                             <textarea
                                 id="message"
                                 className="textarea-contact"
@@ -98,14 +96,20 @@ export default function Contact() {
                         </div>
                         <div className="contact-icon row">
                             <img className="icon" src={iconYellowPhone} alt="Phone icon"/>
-                            <p className="body2">(+387) 68-616-064</p>
+                            <p className="body2">(+49) 3368-616-064</p>
                         </div>
                     </div>
                  </div>
             </div>
-            <div className="modal-form-submit column" data-visible={visible}>
-                <p className="modal-form-text body2">Message successfully sent!</p>
-            </div>  
+
+            <CSSTransition
+            in={snackbarVisible}
+            timeout={500}
+            classNames="modal"
+            unmountOnExit
+            >
+                <Snackbar message={"Message successfully sent!"} />
+            </CSSTransition>
         </section>
     )
 }
